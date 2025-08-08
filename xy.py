@@ -36,7 +36,7 @@ def call_xy(prompt: str):
     buttons[-1].click()
 
     # 等待响应并获取响应内容
-    time.sleep(15)
+    time.sleep(30)
     try:
         answer = driver.find_element(By.CLASS_NAME, 'answer-cont').text
     except:
@@ -46,7 +46,11 @@ def call_xy(prompt: str):
     
 
 if __name__ == '__main__':
-    prompts = np.load("wildjailbreak.npz", allow_pickle=True)["data"][10:]
+    # dir = "wildjailbreak.npz"
+    # dir = "wildguard_test.npz"
+    # dir = "JBV_hate_speech.npz"
+    dir = "JBV_bias.npz"
+    prompts = np.load(dir, allow_pickle=True)["data"]
     for prompt in prompts:
         try:
             print(f"Prompt: {prompt}")
@@ -56,7 +60,7 @@ if __name__ == '__main__':
                 "prompt": prompt,
                 "response": response
             }
-            with open("xy_results.jsonl", "a", encoding="utf-8") as f:
+            with open(f"{dir.split('.')[0]}_results.jsonl", "a", encoding="utf-8") as f:
                 json.dump(result, f, ensure_ascii=False)
                 f.write("\n")
         except KeyboardInterrupt:
