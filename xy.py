@@ -46,10 +46,8 @@ def call_xy(prompt: str):
     
 
 if __name__ == '__main__':
-    # dir = "wildjailbreak.npz"
-    # dir = "wildguard_test.npz"
-    # dir = "JBV_hate_speech.npz"
-    dir = "JBV_bias.npz"
+    dir = "JBV_bias.npz" # 更改为有害prompt保存的 npz 文件路径
+
     prompts = np.load(dir, allow_pickle=True)["data"]
     for prompt in prompts:
         try:
