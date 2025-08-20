@@ -25,6 +25,6 @@
 - JBV: https://huggingface.co/datasets/JailbreakV-28K/JailBreakV-28k
 
 ## 详细文档说明（需使用华为内网访问）
-安全评估流程与定量结果: https://clouddocs.huawei.com/wapp/public/b8ce2a9f-463a-41c1-be82-12beb76dba24
-有害输出代表性示例: https://clouddocs.huawei.com/wapp/public/6c86de2d-c2dc-4e02-a29b-4a39698008d2
-LLM安全攻防相关paper: https://clouddocs.huawei.com/wapp/public/9a20714d-909a-44b9-847e-5650883c4766
+- 安全评估流程与定量结果: https://clouddocs.huawei.com/wapp/public/b8ce2a9f-463a-41c1-be82-12beb76dba24
+- 有害输出代表性示例: https://clouddocs.huawei.com/wapp/public/6c86de2d-c2dc-4e02-a29b-4a39698008d2
+- LLM安全攻防相关paper: https://clouddocs.huawei.com/wapp/public/9a20714d-909a-44b9-847e-5650883c4766
