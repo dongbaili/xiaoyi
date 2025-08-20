@@ -1,5 +1,5 @@
 # 小艺大模型安全性评估
-本仓库包含评估网页版小艺大模型(https://xiaoyi.huawei.com/chat/)的安全合规性的代码和结果。
+本仓库包含评估网页版小艺大模型(https://xiaoyi.huawei.com/chat/) 的安全合规性的代码和结果。
 
 注1：原始有害问题未提交到本仓库中，请自行前往huggingface获取相关数据集的权限并下载。
 
